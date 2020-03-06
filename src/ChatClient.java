@@ -34,7 +34,7 @@ public class ChatClient {
             try {
                 serverIn = new BufferedReader(new InputStreamReader(server.getInputStream()));
             } catch (IOException e) {
-                e.printStackTrace();
+                System.out.println("Error setting up buffer reader to server");
             }
         }
 
